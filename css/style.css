@@ -806,3 +806,62 @@ a:focus {
 [aria-hidden="true"] {
     display: none;
 }
+
+
+
+/* Анимации для корзины и уведомлений */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Стили для пустой корзины */
+.empty-cart {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 20px 0;
+}
+
+/* Улучшаем стили корзины для мобильных */
+@media (max-width: 768px) {
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cart-item .btn {
+        width: 100%;
+    }
+}
+
+/* Уведомления для мобильных */
+@media (max-width: 480px) {
+    .cart-notification {
+        right: 10px !important;
+        left: 10px !important;
+        max-width: none !important;
+    }
+}
