@@ -1,0 +1,442 @@
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* Хедер */
+    .header {
+        height: auto;
+        padding: 8px 0;
+    }
+    
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .logo {
+        justify-content: center;
+        order: 1;
+    }
+    
+    .nav {
+        order: 3;
+        width: 100%;
+        height: auto;
+        margin-top: 8px;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 4px;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .nav-list li {
+        height: auto;
+    }
+    
+    .nav-list a {
+        height: auto;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .cart-btn {
+        order: 2;
+        justify-self: center;
+        height: 32px;
+        padding: 6px 12px;
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    
+    /* Герой */
+    .hero {
+        min-height: 300px;
+        padding: 90px 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 22px;
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+        margin-bottom: 16px;
+        line-height: 1.4;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    
+    /* Поиск */
+    .search-container {
+        padding: 12px;
+        margin: 0 0 15px 0;
+        max-width: none;
+    }
+    
+    .search-box {
+        gap: 6px;
+    }
+    
+    .search-input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .search-btn {
+        padding: 10px 14px;
+        font-size: 14px;
+        min-width: 50px;
+    }
+    
+    .search-clear {
+        right: 55px;
+        font-size: 14px;
+    }
+    
+    /* Товары */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .product-card {
+        padding: 12px;
+        margin: 0 2px;
+    }
+    
+    .product-card img {
+        height: 140px;
+    }
+    
+    .product-card h3 {
+        font-size: 15px;
+    }
+    
+    .product-card .description {
+        font-size: 12px;
+    }
+    
+    .product-card .price {
+        font-size: 16px;
+    }
+    
+    /* О компании */
+    .about {
+        padding: 40px 0;
+    }
+    
+    .about-content p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 25px;
+    }
+    
+    .feature {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    .feature h3 {
+        font-size: 15px;
+    }
+    
+    .feature p {
+        font-size: 13px;
+    }
+    
+    /* Контакты */
+    .contacts {
+        padding: 40px 0;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .contact-item {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    .contact-item h3 {
+        font-size: 14px;
+    }
+    
+    .contact-item p {
+        font-size: 13px;
+    }
+    
+    /* Корзина */
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .cart-header {
+        padding: 12px;
+    }
+    
+    .cart-content {
+        padding: 12px;
+    }
+    
+    .cart-item {
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    /* Формы */
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+    
+    .order-form {
+        padding: 40px 0;
+    }
+    
+    .form {
+        margin: 0;
+        padding: 15px;
+    }
+    
+    /* Футер */
+    .footer {
+        padding: 25px 0 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 13px;
+    }
+    
+    .footer-section p {
+        font-size: 12px;
+    }
+    
+    .footer-bottom {
+        padding-top: 12px;
+        font-size: 11px;
+    }
+    
+    /* Статистика поиска */
+    .search-stats {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    /* Нет результатов */
+    .no-results {
+        padding: 30px 15px;
+    }
+    
+    .no-results h3 {
+        font-size: 16px;
+    }
+    
+    .no-results p {
+        font-size: 13px;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 8px;
+    }
+    
+    .header-content {
+        gap: 6px;
+    }
+    
+    .nav-list {
+        gap: 2px;
+    }
+    
+    .nav-list a {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+    
+    .logo h1 {
+        font-size: 14px;
+    }
+    
+    .logo-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+    
+    .cart-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+        height: 30px;
+    }
+    
+    .hero-title {
+        font-size: 20px;
+    }
+    
+    .hero-subtitle {
+        font-size: 13px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .search-container {
+        padding: 10px;
+    }
+    
+    .search-input {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .search-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+        min-width: 45px;
+    }
+    
+    .search-clear {
+        right: 50px;
+        font-size: 13px;
+    }
+    
+    .product-card {
+        padding: 10px;
+    }
+    
+    .product-card img {
+        height: 120px;
+    }
+    
+    .feature {
+        padding: 12px;
+    }
+    
+    .contact-item {
+        padding: 12px;
+    }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 360px) {
+    .nav-list a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+    
+    .hero-title {
+        font-size: 18px;
+    }
+    
+    .search-input {
+        font-size: 12px;
+    }
+    
+    .product-card h3 {
+        font-size: 14px;
+    }
+    
+    .product-card .description {
+        font-size: 11px;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Ориентация landscape для мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 200px;
+        padding: 80px 0 20px;
+    }
+    
+    .header {
+        position: relative;
+    }
+}
+
+/* Поддержка касаний */
+@media (hover: none) {
+    .product-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .feature:hover {
+        transform: none;
+    }
+    
+    .nav-list a:hover {
+        background: transparent;
+    }
+}
+
+/* Исправление скролла на iOS */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+}

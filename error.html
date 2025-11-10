@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена - TechStore</title>
+    <meta name="description" content="Запрашиваемая страница не существует">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/404.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html" style="color: var(--primary-color); text-decoration: none;">TechStore</a></h1>
+                </div>
+                <nav class="nav" aria-label="Основная навигация">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#catalog">Каталог</a></li>
+                        <li><a href="index.html#about">О компании</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" role="main">
+        <section class="error-page">
+            <div class="container">
+                <div class="error-content">
+                    <div class="error-image" role="img" aria-label="Страница не найдена">
+                        <svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M150 50L200 100L150 150L100 100L150 50Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M120 80L180 80M120 120L180 120" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="150" cy="100" r="60" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="error-code">404</div>
+                    
+                    <h1 class="error-title">Страница не найдена</h1>
+                    
+                    <p class="error-description">
+                        К сожалению, запрашиваемая вами страница не существует. 
+                        Возможно, она была перемещена или удалена. 
+                        Предлагаем вернуться на главную страницу или воспользоваться навигацией.
+                    </p>
+                    
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary">На главную</a>
+                        <a href="index.html#catalog" class="btn btn-secondary">В каталог</a>
+                        <button onclick="history.back()" class="btn btn-secondary">Назад</button>
+                    </div>
+                    
+                    <div class="error-help">
+                        <p>
+                            Если вы считаете, что это ошибка, пожалуйста, 
+                            <a href="mailto:support@techstore.ru">свяжитесь с поддержкой</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Лучший выбор техники с 2024 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@techstore.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Адрес</h4>
+                    <p>Москва, ул. Техническая, д. 123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/404.js"></script>
+</body>
+</html>

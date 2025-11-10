@@ -1,0 +1,105 @@
+/* 404 страница */
+.error-page {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.error-content {
+    max-width: 500px;
+    width: 100%;
+}
+
+.error-code {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.error-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.error-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.error-image {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    opacity: 0.8;
+}
+
+.error-image svg {
+    width: 100%;
+    height: auto;
+}
+
+.error-help {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.error-help p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.error-help a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.error-help a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .error-page {
+        min-height: 300px;
+        padding: 70px 0 30px;
+    }
+    
+    .error-code {
+        font-size: 60px;
+    }
+    
+    .error-title {
+        font-size: 18px;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .error-actions .btn {
+        width: 200px;
+    }
+    
+    .error-image {
+        max-width: 150px;
+    }
+}
