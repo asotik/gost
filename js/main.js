@@ -15,7 +15,7 @@ class ProductManager {
                 id: 2,
                 name: 'MacBook Air M2',
                 price: 1299,
-                image: 'img/iphone.webp',
+                image: 'img/macbook.webp',
                 description: 'Мощный и легкий ноутбук для работы и творчества',
                 category: 'laptop',
                 brand: 'Apple'
@@ -24,7 +24,7 @@ class ProductManager {
                 id: 3,
                 name: 'AirPods Pro',
                 price: 249,
-                image: 'img/iphone.webp',
+                image: 'img/airpods.webp',
                 description: 'Беспроводные наушники с шумоподавлением',
                 category: 'headphones',
                 brand: 'Apple'
@@ -33,7 +33,7 @@ class ProductManager {
                 id: 4,
                 name: 'iPad Pro',
                 price: 799,
-                image: 'img/iphone.webp',
+                image: 'img/ipad.webp',
                 description: 'Профессиональный планшет для творчества',
                 category: 'tablet',
                 brand: 'Apple'
@@ -42,7 +42,7 @@ class ProductManager {
                 id: 5,
                 name: 'Samsung Galaxy S24',
                 price: 899,
-                image: 'img/iphone.webp',
+                image: 'img/samsung-phone.webp',
                 description: 'Флагманский смартфон Samsung с AI-функциями',
                 category: 'phone',
                 brand: 'Samsung'
@@ -51,7 +51,7 @@ class ProductManager {
                 id: 6,
                 name: 'Sony WH-1000XM5',
                 price: 349,
-                image: 'img/iphone.webp',
+                image: 'img/sony-headphones.webp',
                 description: 'Наушники с лучшим шумоподавлением на рынке',
                 category: 'headphones',
                 brand: 'Sony'
@@ -60,7 +60,7 @@ class ProductManager {
                 id: 7,
                 name: 'Xiaomi Redmi Note 13',
                 price: 299,
-                image: 'img/iphone.webp',
+                image: 'img/xiaomi-phone.webp',
                 description: 'Бюджетный смартфон с отличной камерой',
                 category: 'phone',
                 brand: 'Xiaomi'
@@ -69,7 +69,7 @@ class ProductManager {
                 id: 8,
                 name: 'Samsung Galaxy Tab S9',
                 price: 699,
-                image: 'img/iphone.webp',
+                image: 'img/samsung-tablet.webp',
                 description: 'Мощный планшет для работы и развлечений',
                 category: 'tablet',
                 brand: 'Samsung'
@@ -142,8 +142,6 @@ class ProductManager {
     // Обновление статистики
     updateSearchStats() {
         const statsElement = document.getElementById('productsCount');
-        const totalElement = document.getElementById('productsTotal');
-        statsElement.textContent = this.filteredProducts.length;
         
         // Показываем дополнительную информацию если есть поиск
         if (this.currentSearch) {
@@ -156,7 +154,6 @@ class ProductManager {
     // Управление кнопкой очистки
     toggleClearButton() {
         const clearBtn = document.querySelector('.search-clear');
-        const searchInput = document.getElementById('searchInput');
         
         if (this.currentSearch) {
             clearBtn.style.display = 'block';
@@ -256,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Обработчики для поиска
     const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.querySelector('.search-clear');
     
     // Поиск при вводе текста (с задержкой)
     let searchTimeout;
@@ -272,6 +270,9 @@ document.addEventListener('DOMContentLoaded', () => {
             performSearch();
         }
     });
+    
+    // Очистка поиска по кнопке
+    clearBtn.addEventListener('click', clearSearch);
     
     // Фокус на поиск при загрузке
     searchInput.focus();
